@@ -1,0 +1,48 @@
+                  sap lag-10,538,1025 ,create
+                        description "zx-e9999999999-HNSDQZDQCCMWYH"
+                        cpu-protection 100 mac-monitoring
+                        sub-sla-mgmt
+                            multi-sub-sap
+                            no shutdown
+                        exit
+                        static-host ip 183,249,250,60 ,create
+                            sla-profile "Sla-Prof-ZX-100m"
+                            sub-profile "sub-prof-local"
+                            subscriber "JingQiaoCun"
+                            no shutdown
+                        exit
+                        static-host ip 183,249,250,60 ,create
+                            sla-profile "Sla-Prof-ZX-100m"
+                            sub-profile "sub-prof-local"
+                            subscriber "JingQiaoCun"
+                            no shutdown
+                        exit
+                    exit
+                    sap lag-10,542,1025 ,create
+                        description "zx-e9999999999-JXWZQY"
+                        cpu-protection 100 mac-monitoring
+                        sub-sla-mgmt
+                            multi-sub-sap
+                            no shutdown
+                        exit
+                        static-host ip 112,11,106,132 ,create
+                            sla-profile "sla-prof-800-deny_80_8080"
+                            sub-profile "sub-prof-local"
+                            subscriber "CMNET-1824920"
+                            no shutdown
+                        exit
+                    exit
+                    sap lag-10,532,1026 ,create
+                        description "zx-15573603122-HNSXQZRMZFHFCCWHYSHFXQYLFWZX"
+                        cpu-protection 100 mac-monitoring
+                        sub-sla-mgmt
+                            multi-sub-sap
+                            no shutdown
+                        exit
+                        static-host ip 111,3,59,202 ,create
+                            sla-profile "Sla-Prof-ZX-Default-Filter"
+                            sub-profile "sub-prof-local"
+                            subscriber "CMNET-1856426"
+                            no shutdown
+                        exit
+                    exit
