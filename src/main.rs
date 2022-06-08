@@ -17,7 +17,7 @@ fn main() {
 
     println!("你的文件内容: {}", contents);
 
-    let split_vec: Vec<&str> = contents.split("sap ").collect();
+    let split_vec: Vec<&str> = contents.split("  sap ").collect();
 
     let match_vlan = Regex::new(r"lag-(.+?),create").unwrap();
     let match_ip = Regex::new(r"ip (.+),create").unwrap();
